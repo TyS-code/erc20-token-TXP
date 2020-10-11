@@ -757,7 +757,6 @@ pragma solidity ^0.6.0;
 
 /**
  * @title IERC1363 Interface
- * @author Vittorio Minacori (https://github.com/vittominacori)
  * @dev Interface for a Payable Token contract as defined in
  *  https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1363.md
  */
@@ -846,7 +845,6 @@ pragma solidity ^0.6.0;
 
 /**
  * @title IERC1363Receiver Interface
- * @author Vittorio Minacori (https://github.com/vittominacori)
  * @dev Interface for any contract that wants to support transferAndCall or transferFromAndCall
  *  from ERC1363 token contracts as defined in
  *  https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1363.md
@@ -880,7 +878,6 @@ pragma solidity ^0.6.0;
 
 /**
  * @title IERC1363Spender Interface
- * @author Vittorio Minacori (https://github.com/vittominacori)
  * @dev Interface for any contract that wants to support approveAndCall
  *  from ERC1363 token contracts as defined in
  *  https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1363.md
@@ -1081,7 +1078,6 @@ pragma solidity ^0.6.0;
 
 /**
  * @title ERC1363
- * @author Vittorio Minacori (https://github.com/vittominacori)
  * @dev Implementation of an ERC1363 interface
  */
 contract ERC1363 is ERC20, IERC1363, ERC165 {
@@ -1311,7 +1307,6 @@ pragma solidity ^0.6.0;
 
 /**
  * @title TokenRecover
- * @author Vittorio Minacori (https://github.com/vittominacori)
  * @dev Allow to recover any ERC20 sent into the contract for error
  */
 contract TokenRecover is Ownable {
@@ -1808,7 +1803,6 @@ pragma solidity ^0.6.0;
 
 /**
  * @title BaseToken
- * @author Vittorio Minacori (https://github.com/vittominacori)
  * @dev Implementation of the BaseToken
  */
 contract BaseToken is ERC20Capped, ERC20Burnable, ERC1363, Roles, TokenRecover {
